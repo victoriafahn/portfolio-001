@@ -1,0 +1,203 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white; /* Fondo blanco */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar los elementos */
+    align-items: center;
+    height: 60px; /* Altura de la barra de navegación */
+}
+
+header nav ul li {
+    margin: 0 20px; /* Espacio entre los elementos */
+}
+
+header nav ul li a {
+    color: #333; /* Color del texto */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px 15px; /* Relleno para los enlaces */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+header nav ul li a:hover {
+    color: #9867a1; /* Color del texto al pasar el ratón */
+}
+
+/* Sección hero */
+#hero {
+    position: relative; /* Establecer la posición relativa para que el pseudo-elemento pueda ser posicionado correctamente */
+    color: white; /* Color del texto */
+    height: 100vh; /* Altura de la sección */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; /* Ajuste para la barra de navegación fija */
+}
+
+#hero::before {
+    content: ""; /* Contenido del pseudo-elemento */
+    background: url('images/background1\ \(1\).jpg') no-repeat center center/cover; /* Imagen de fondo */
+    position: absolute; /* Establecer la posición absoluta para superponer el pseudo-elemento */
+    top: 0; /* Desde la parte superior */
+    left: 0; /* Desde la izquierda */
+    width: 100%; /* Ancho igual al del contenedor */
+    height: 100%; /* Altura igual al del contenedor */
+    opacity: 0.8; /* Reducir la opacidad de la imagen de fondo */
+    z-index: -1; /* Asegurar que el pseudo-elemento esté detrás del contenido */
+}
+
+
+
+
+.hero-content h1 {
+    font-size: 2.5em;
+}
+
+.hero-content button {
+    background-color: #ce8adb;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.hero-content button:hover {
+    background-color: #9867a1;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Contenedor de habilidades */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skills-container span {
+    background-color: #ce8adb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.skills-container span:hover {
+    transform: scale(1.1);
+}
+
+/* Contenedor de portafolio */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 30%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Separadores */
+.separator {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #9867a1;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ce8adb;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.text-animate {
+    position: relative;
+    width: 32.8rem;
+}
+
+.text-animate h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ce8adb; 
+    -webkit-text-stroke: .7px ;
+}
+
+
